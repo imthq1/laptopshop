@@ -50,9 +50,9 @@
                         <td>${products.price}</td>
                         <td>${products.fatory}</td>
                         <td>
-                            <a href="/admin/user/${Users.id}" class="btn btn-sm btn-info">View</a>
-                            <a href="/admin/user/update/${Users.id}" class="btn btn-sm btn-warning">Update</a>
-                            <a href="/admin/user/delete/${Users.id}" class="btn btn-sm btn-danger">Delete</a>
+                            <a href="/admin/product/${products.id}" class="btn btn-sm btn-info">View</a>
+                            <a href="/admin/product/update/${products.id}" class="btn btn-sm btn-warning">Update</a>
+                            <a href="/admin/product/delete/${products.id}" class="btn btn-sm btn-danger">Delete</a>
                         </td>
                     </tr>
                     </c:forEach>

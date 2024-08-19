@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function() { // Corrected the use of colons to parentheses and braces
+        $(document).ready(function() {
             const avatarFile = $("#avatarFile");
             avatarFile.change(function (e) {
                 const imgURL = URL.createObjectURL(e.target.files[0]);

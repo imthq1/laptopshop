@@ -93,17 +93,17 @@ public class UserController {
     //@ModelAttribute("newUser") User user data by view
     @PostMapping("/admin/user/update/{id}")
     public String updateUser(Model model,@ModelAttribute("newUser") User user) {
-    User Users=this.userService.getUserById(user.getId());
-    if (Users != null) {
-        Users.setId(user.getId());
-        Users.setAddress(user.getAddress());
-        Users.setFullName(user.getFullName());
-        Users.setPhone(user.getPhone());
+        User Users=this.userService.getUserById(user.getId());
+        if (Users != null) {
+            Users.setId(user.getId());
+            Users.setAddress(user.getAddress());
+            Users.setFullName(user.getFullName());
+            Users.setPhone(user.getPhone());
 
-        this.userService.handleSaveUser(Users);
-    }
+            this.userService.handleSaveUser(Users);
+        }
 
-    return "redirect:/admin/user";
+        return "redirect:/admin/user";
 
     }
     @GetMapping("/admin/user/delete/{id}")
